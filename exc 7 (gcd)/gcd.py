@@ -6,9 +6,10 @@ def gcd(c,d):
         small=d
     else:
          small=c
-    for i in range(1,small+1):
+    for i in range(small+1,1,-1):
         if(c%i==0 and d%i==0):
             gcdn=i
+            break;
     return(gcdn)
              
 a=gcd(a,b)
